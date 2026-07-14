@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember &amp; Olive — Wood-Fire Mediterranean</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav>
+    <a href="#top" class="brand">Ember <span>&amp;</span> Olive</a>
+    <div class="nav-links">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Reserve</a>
+    </div>
+    <a href="#reserve" class="nav-cta" data-toast="Jumping to reservations">Book a table</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <svg class="hero-illustration" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="heroFlameCore" cx="50%" cy="70%" r="60%">
+        <stop offset="0%" stop-color="#F2C77E"/>
+        <stop offset="35%" stop-color="#D97A4E"/>
+        <stop offset="70%" stop-color="#B8542E"/>
+        <stop offset="100%" stop-color="#6B3420"/>
+      </radialGradient>
+      <linearGradient id="heroLogSet" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3A2E22"/>
+        <stop offset="100%" stop-color="#1C1A17"/>
+      </linearGradient>
+    </defs>
+    <ellipse cx="250" cy="430" rx="190" ry="26" fill="#0F0D0B" opacity="0.6"/>
+    <rect x="90" y="392" width="230" height="26" rx="10" fill="url(#heroLogSet)"/>
+    <rect x="130" y="368" width="230" height="26" rx="10" fill="url(#heroLogSet)"/>
+    <path d="M250 430 C170 430 140 340 175 275 C185 320 210 320 205 285 C240 330 245 260 220 220 C280 250 300 320 280 360 C320 330 320 260 290 210 C360 260 350 380 250 430 Z" fill="url(#heroFlameCore)"/>
+    <path d="M250 430 C215 430 200 385 218 350 C224 375 238 375 234 355 C255 380 258 340 244 318 C278 335 288 375 275 400 C300 382 300 345 282 318 C322 345 316 410 250 430 Z" fill="#F2C77E" opacity="0.85"/>
+    <g opacity="0.9">
+      <circle cx="200" cy="180" r="4" fill="#D97A4E"/>
+      <circle cx="290" cy="140" r="3" fill="#C9A661"/>
+      <circle cx="240" cy="100" r="3.5" fill="#D97A4E"/>
+      <circle cx="320" cy="200" r="2.5" fill="#C9A661"/>
+    </g>
+  </svg>
+  <div class="ember-particle" style="left:62%; bottom:80px; width:4px; height:4px; --drift:14px; animation-duration:6s; animation-delay:0s;"></div>
+  <div class="ember-particle" style="left:68%; bottom:60px; width:3px; height:3px; --drift:-18px; animation-duration:7.5s; animation-delay:1.5s;"></div>
+  <div class="ember-particle" style="left:74%; bottom:90px; width:5px; height:5px; --drift:10px; animation-duration:5.5s; animation-delay:3s;"></div>
+  <div class="ember-particle" style="left:58%; bottom:70px; width:3px; height:3px; --drift:-8px; animation-duration:8s; animation-delay:0.8s;"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Wood-fire kitchen · Est. 2016</div>
+      <h1>Cooked over <em>fire</em>,<br>seasoned by the <em>coast</em>.</h1>
+      <p class="hero-sub">Ember &amp; Olive is a live-fire Mediterranean kitchen — whole fish, charred vegetables, and slow-turned meats, finished with oil pressed from our own grove. Every plate leaves the hearth, not the fryer.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn-primary" data-toast="Jumping to reservations">Reserve a table</a>
+        <a href="#menu" class="btn-ghost" data-toast="Jumping to the menu">View the menu</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="kicker">Tonight at the hearth</div>
+      <h3>Whole Branzino</h3>
+      <p>Grilled over olive wood, stuffed with lemon and wild oregano, served with a charred fennel salad.</p>
+      <div class="divider"></div>
+      <ul>
+        <li>Dinner service <b>5:30 – 11:00</b></li>
+        <li>Hearth seating <b>6 tables left</b></li>
+        <li>Chef's menu <b>$95 / person</b></li>
+      </ul>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<svg class="flame-divider" viewBox="0 0 1200 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,64 L0,30 C40,10 80,45 120,28 C160,11 200,42 240,26 C280,10 320,48 360,30 C400,12 440,44 480,27 C520,10 560,46 600,29 C640,12 680,45 720,28 C760,11 800,43 840,27 C880,11 920,47 960,30 C1000,13 1040,44 1080,28 C1110,17 1140,32 1200,20 L1200,64 Z"/>
+</svg>
+
+<section class="philosophy" id="philosophy">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Our approach</div>
+      <h2>Three things we don't compromise on</h2>
+    </div>
+    <div class="phil-grid">
+      <div class="phil-item">
+        <span class="num">Fire</span>
+        <h3>No gas, no electric</h3>
+        <p>Everything that leaves our kitchen has touched the hearth — olive and oak wood burned down to embers, then cooked low and slow or blistered hot and fast.</p>
+      </div>
+      <div class="phil-item">
+        <span class="num">Grove</span>
+        <h3>Our own oil</h3>
+        <p>We press our olive oil from a small grove two hours south. It finishes nearly everything on the menu, from the bread to the last course.</p>
+      </div>
+      <div class="phil-item">
+        <span class="num">Coast</span>
+        <h3>Fish, same-day</h3>
+        <p>Whole fish comes in each morning from day boats. If the catch isn't right, it isn't on the board that night — no exceptions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The menu</div>
+      <h2>A short list, kept honest</h2>
+      <p>We change the board with the season and the catch. This is a representative sample of what's cooking now.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-menu="hearth">From the Hearth</button>
+      <button class="menu-tab" data-menu="starters">Starters</button>
+      <button class="menu-tab" data-menu="sides">Sides &amp; Salads</button>
+      <button class="menu-tab" data-menu="drinks">Wine &amp; Drinks</button>
+    </div>
+
+    <div class="menu-grid active" data-panel="hearth">
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Whole Branzino</h4><p>Olive wood, lemon, wild oregano, charred fennel</p></div>
+          <div class="price">$42</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Bone-in Ribeye</h4><p>Dry-aged 30 days, embers, salsa verde</p></div>
+          <div class="price">$68</div>
+        </div>
+      </div>
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Spit-Roast Lamb Shoulder</h4><p>Six-hour turn, cumin and coriander crust</p></div>
+          <div class="price">$46</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Charred Octopus</h4><p>White bean purée, smoked paprika oil</p></div>
+          <div class="price">$34</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" data-panel="starters">
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Grove Bread &amp; Oil</h4><p>Warm sourdough, our first-press olive oil</p></div>
+          <div class="price">$9</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Whipped Feta</h4><p>Hot honey, chili, grilled flatbread</p></div>
+          <div class="price">$14</div>
+        </div>
+      </div>
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Smoked Eggplant</h4><p>Tahini, pomegranate, mint</p></div>
+          <div class="price">$13</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Cured Sardines</h4><p>Charred bread, salsa verde</p></div>
+          <div class="price">$15</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" data-panel="sides">
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Charred Broccolini</h4><p>Anchovy butter, chili flake</p></div>
+          <div class="price">$12</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Fennel &amp; Citrus Salad</h4><p>Shaved fennel, blood orange, olive</p></div>
+          <div class="price">$13</div>
+        </div>
+      </div>
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Ember-Roasted Potatoes</h4><p>Rosemary, sea salt, aioli</p></div>
+          <div class="price">$11</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Grilled Radicchio</h4><p>Gorgonzola, walnut, honey</p></div>
+          <div class="price">$12</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" data-panel="drinks">
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>Coastal White Flight</h4><p>Three glasses, sommelier's pick</p></div>
+          <div class="price">$24</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Smoked Negroni</h4><p>Olive-wood smoked gin, sweet vermouth</p></div>
+          <div class="price">$16</div>
+        </div>
+      </div>
+      <div>
+        <div class="menu-row">
+          <div class="info"><h4>House Red Blend</h4><p>Estate vineyard, glass or bottle</p></div>
+          <div class="price">$14 / $54</div>
+        </div>
+        <div class="menu-row">
+          <div class="info"><h4>Citrus Spritz (N/A)</h4><p>Grapefruit, rosemary, soda</p></div>
+          <div class="price">$9</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Inside the room</div>
+      <h2>The dining room &amp; the hearth</h2>
+    </div>
+    <div class="gallery">
+      <div class="g-item g1">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1bg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2B241B"/><stop offset="100%" stop-color="#1C1A17"/>
+            </linearGradient>
+            <radialGradient id="g1flame" cx="50%" cy="65%" r="55%">
+              <stop offset="0%" stop-color="#F2C77E"/><stop offset="45%" stop-color="#D97A4E"/><stop offset="100%" stop-color="#8A3E22"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="340" fill="url(#g1bg)"/>
+          <ellipse cx="150" cy="290" rx="110" ry="16" fill="#0F0D0B"/>
+          <rect x="70" y="262" width="160" height="16" rx="6" fill="#3A2E22"/>
+          <rect x="95" y="242" width="160" height="16" rx="6" fill="#241D16"/>
+          <path d="M150 290 C100 290 88 235 112 195 C118 225 135 225 130 200 C155 230 158 180 140 155 C185 175 200 225 185 255 C210 235 210 190 190 160 C235 195 225 265 150 290 Z" fill="url(#g1flame)"/>
+        </svg>
+        <span class="g-label">The hearth</span>
+      </div>
+      <div class="g-item g2">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <rect width="300" height="340" fill="#26221D"/>
+          <circle cx="150" cy="95" r="5" fill="#C9A661"/>
+          <line x1="150" y1="0" x2="150" y2="90" stroke="#4A4335" stroke-width="1.5"/>
+          <ellipse cx="150" cy="120" rx="34" ry="14" fill="#C9A661" opacity="0.16"/>
+          <rect x="30" y="230" width="240" height="8" rx="3" fill="#3A322A"/>
+          <rect x="55" y="238" width="6" height="60" fill="#3A322A"/>
+          <rect x="245" y="238" width="6" height="60" fill="#3A322A"/>
+          <ellipse cx="115" cy="222" rx="26" ry="8" fill="#EDE3CF"/>
+          <ellipse cx="115" cy="219" rx="20" ry="6" fill="#D9CEB8"/>
+          <rect x="180" y="196" width="7" height="34" rx="3" fill="#EDE3CF" opacity="0.85"/>
+          <ellipse cx="183" cy="194" rx="9" ry="5" fill="#EDE3CF" opacity="0.5"/>
+          <circle cx="205" cy="220" r="3" fill="#B8542E"/>
+        </svg>
+        <span class="g-label">The dining room</span>
+      </div>
+      <div class="g-item g3">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <rect width="300" height="340" fill="#231F1A"/>
+          <circle cx="150" cy="175" r="100" fill="#E7DEC9"/>
+          <circle cx="150" cy="175" r="86" fill="none" stroke="#C9BFA5" stroke-width="1.5"/>
+          <path d="M95 175 C110 145 190 145 205 175 C190 205 110 205 95 175 Z" fill="#B8542E"/>
+          <path d="M205 175 L228 160 L228 190 Z" fill="#8A3E22"/>
+          <g stroke="#8A3E22" stroke-width="2" opacity="0.6">
+            <line x1="110" y1="160" x2="122" y2="192"/>
+            <line x1="128" y1="150" x2="140" y2="198"/>
+            <line x1="150" y1="147" x2="160" y2="202"/>
+            <line x1="172" y1="150" x2="180" y2="196"/>
+          </g>
+          <circle cx="98" cy="150" r="3" fill="#4A5A3A"/>
+          <circle cx="108" cy="142" r="3" fill="#4A5A3A"/>
+          <circle cx="90" cy="140" r="3" fill="#6C7C56"/>
+          <path d="M195 205 A18 18 0 0 1 225 210 A18 12 0 0 1 195 205 Z" fill="#C9A661"/>
+        </svg>
+        <span class="g-label">Off the grill</span>
+      </div>
+      <div class="g-item g4">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <rect width="300" height="340" fill="#26221D"/>
+          <path d="M150 30 C140 100 160 140 130 200 C110 240 120 280 150 310" fill="none" stroke="#6C7C56" stroke-width="4" stroke-linecap="round"/>
+          <g fill="#6C7C56">
+            <ellipse cx="122" cy="90" rx="16" ry="7" transform="rotate(-30 122 90)"/>
+            <ellipse cx="168" cy="120" rx="16" ry="7" transform="rotate(20 168 120)"/>
+            <ellipse cx="112" cy="160" rx="16" ry="7" transform="rotate(-15 112 160)"/>
+            <ellipse cx="150" cy="230" rx="16" ry="7" transform="rotate(25 150 230)"/>
+          </g>
+          <g fill="#4A5A3A">
+            <circle cx="140" cy="105" r="9"/>
+            <circle cx="158" cy="150" r="9"/>
+            <circle cx="128" cy="195" r="9"/>
+            <circle cx="145" cy="265" r="9"/>
+          </g>
+          <g fill="#C9A661" opacity="0.55">
+            <circle cx="137" cy="101" r="3"/>
+            <circle cx="155" cy="146" r="3"/>
+          </g>
+        </svg>
+        <span class="g-label">From the grove</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="wrap">
+    <blockquote>"Every table in the room faces the hearth for a reason — the fire is the whole point, and it shows in every plate that leaves it."</blockquote>
+    <cite>— City Table Journal</cite>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="wrap reserve-inner">
+    <div>
+      <div class="eyebrow">Visit us</div>
+      <h2>Come sit by the fire</h2>
+      <p>We hold a limited number of hearth-side tables each night. Book ahead for weekends — walk-ins are welcome at the bar any time.</p>
+      <div class="info-list">
+        <div class="row"><div class="label">Address</div><div class="val">214 Harborview Lane, Karachi</div></div>
+        <div class="row"><div class="label">Hours</div><div class="val">Tue – Sun, 5:30pm – 11:00pm<br>Closed Mondays</div></div>
+        <div class="row"><div class="label">Phone</div><div class="val">+92 21 555 0148</div></div>
+        <div class="row"><div class="label">Email</div><div class="val">host@emberandolive.com</div></div>
+      </div>
+    </div>
+    <form class="reserve-form" id="reserveForm">
+      <div class="form-row">
+        <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="03xx xxxxxxx" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="date">Date</label><input id="date" type="date" required></div>
+        <div class="field"><label for="time">Time</label><input id="time" type="time" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field full"><label for="guests">Guests</label>
+          <select id="guests">
+            <option>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5–6 guests</option>
+            <option>7+ guests (call us)</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="form-submit">Request reservation</button>
+      <p class="form-note">We'll confirm by phone within a few hours.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">Ember <span>&amp;</span> Olive</a>
+        <p>A live-fire Mediterranean kitchen on the harbor. Cooked over wood, finished with oil from our own grove.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="#reserve">Reservations</a></li>
+          <li><a href="#" class="demo-link">Private events</a></li>
+          <li><a href="#" class="demo-link">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" class="demo-link">Instagram</a></li>
+          <li><a href="#" class="demo-link">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ember &amp; Olive. All rights reserved.</span>
+      <span>Karachi, Pakistan</span>
+    </div>
+  </div>
+</footer>
+
+<div class="demo-toast" id="demoToast"><span class="dot"></span><span id="demoToastText">This is a sample website — this button isn't connected to anything.</span></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
